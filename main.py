@@ -9,7 +9,7 @@ def MoveFiles():
     start = time.perf_counter()
     shutil.copyfile(path, destination)
     end = time.perf_counter()
-    print(f"Moved in {end-start}")
+    print(f"Moved in {round((end-start)*1000, 2)}ms")
 
 def Main():
     print("Waiting")
